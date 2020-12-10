@@ -14,9 +14,11 @@ function myFunction() {
   var res = str.split(" ");
   console.log(typeof(res));
   res.sort();
-  res.toString();
+//   res.toString();
+//   console.log(typeof(res));
+  res= res.join(" , ");
+  console.log(res);
   console.log(typeof(res));
-  //res.join("and ");
   document.getElementById("demo").innerHTML = res;
 }
 </script>
