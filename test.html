@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the array values after the split.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "1 4 2 3 4";
+  var res = str.split(" ");
+  console.log(typeof(res));
+  res.sort();
+  res.toString();
+  console.log(typeof(res));
+  //res.join("and ");
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
+
+</body>
+</html>
